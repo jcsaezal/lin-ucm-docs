@@ -30,12 +30,15 @@ $endif$
 <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
 <!-- Custom Stylesheet -->
 <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<!-- Here goes your Colors Css -->
+$if(css-color)$
+<link rel="stylesheet" type="text/css" href="assets/css/color-$css-color$.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    $endif$
 $if(toc)$
 <style type="text/css">.sidebar ul{padding-left: 10px;}</style>
 $endif$
