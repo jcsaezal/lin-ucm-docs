@@ -1,5 +1,5 @@
 #!/bin/bash
-documents=('../Modulos/guion.md modulos')
+documents=('../Modulos/guion.md practica1')
 
 ndocs=${#documents[@]}
 
