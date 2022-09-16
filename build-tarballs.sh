@@ -1,5 +1,5 @@
 #!/bin/bash
-codes=('1-Modulos FicherosP1')
+codes=('1-Modulos FicherosP1' '2-Syscalls FicherosP2')
 codedir="../../Code"
 targetcodes="${PWD}/code"
 
