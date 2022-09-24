@@ -1,5 +1,7 @@
 #!/bin/bash
-documents=('../Modulos/guion.md practica1' '../IntroBPFTrace/intro_bpftrace.md intro-bpftrace' '../SystemCalls/guion.md practica2' '../Blinkdrv/blinkdrv.md blinkdrv')
+documents=('../Modulos/guion.md practica1' '../IntroBPFTrace/intro_bpftrace.md intro-bpftrace' \
+'../SystemCalls/guion.md practica2' '../Blinkdrv/blinkdrv.md blinkdrv' \
+'../ConfiguracionSistema/guion.md configuracion-placa')
 
 ndocs=${#documents[@]}
 
