@@ -1,5 +1,5 @@
 #!/bin/bash
-codes=('1-Modulos FicherosP1' '2-Syscalls FicherosP2' '3-Drivers FicherosP3')
+codes=('1-Modulos FicherosP1' '2-Syscalls FicherosP2' '3-Drivers FicherosP3' '4-ProcSincro FicherosP4')
 codedir="../../Code"
 targetcodes="${PWD}/code"
 
