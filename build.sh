@@ -3,7 +3,8 @@ documents=('../Modulos/guion.md practica1' '../IntroBPFTrace/intro_bpftrace.md i
 '../SystemCalls/guion.md practica2' '../Blinkdrv/blinkdrv.md blinkdrv' \
 '../ConfiguracionSistema/guion.md configuracion-placa' \
 '../Drivers/guion.md practica3' \
-'../ProcSincro/guion.md practica4')
+'../ProcSincro/guion.md practica4' \
+'../TopBottom/guion.md practica5')
 
 ndocs=${#documents[@]}
 
