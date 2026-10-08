@@ -1,19 +1,20 @@
 #!/bin/bash
-documents=('../Modulos/guion.md practica1' '../IntroBPFTrace/intro_bpftrace.md intro-bpftrace' \
-'../SystemCalls/guion.md practica2' '../Blinkdrv/blinkdrv.md blinkdrv' \
-'../ConfiguracionSistema/guion.md configuracion-placa' \
-'../Drivers/guion.md practica3' \
-'../ProcSincro/guion.md practica4' \
-'../TopBottom/guion.md practica5')
+documents=('Modulos/guion.md practica1' 'IntroBPFTrace/intro_bpftrace.md intro-bpftrace' \
+'SystemCalls/guion.md practica2' 'Blinkdrv/blinkdrv.md blinkdrv' \
+'ConfiguracionSistema/guion.md configuracion-placa' \
+'Drivers/guion.md practica3' \
+'ProcSincro/guion.md practica4' \
+'TopBottom/guion.md practica5')
 
 ndocs=${#documents[@]}
+dir_guiones="../Practicas/Guiones"
 
 ## Clone image directory
 if [ -d img ]; then
 	rm -rf img
 fi
 
-cp -rf ../img .
+cp -rf "${dir_guiones}/img" .
 
 selected_document=$1
 
@@ -26,7 +27,7 @@ fi
 for (( i=0 ; $i<$ndocs ; i++ ))
 do
 	items=(${documents[$i]})
-	source_file=${items[0]}
+	source_file="${dir_guiones}/${items[0]}"
 	target_file1=${items[1]}.html
 	target_file2=${items[1]}.pdf
 
